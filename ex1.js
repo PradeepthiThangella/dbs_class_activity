@@ -1,1 +1,24 @@
-alert("Alert from ex1.js");
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Multiples of 3 or 5</title>
+</head>
+<body>
+
+<h2 id="result"></h2>
+
+<script>
+    let sum = 0;
+
+    for (let i = 1; i < 1000; i++) {
+        if (i % 3 === 0 || i % 5 === 0) {
+            sum += i;
+        }
+    }
+
+    document.getElementById("result").textContent =
+        "Sum = " + sum;
+</script>
+
+</body>
+</html>
