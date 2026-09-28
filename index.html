@@ -17,7 +17,31 @@
           Ex 2: Create a function to find the sum of all the multiples of a or b below n.
          <br> Ex 2.1 Use text boxes to get a,b and n. 
          <br>
-         
+
+          <h2>sum of multiples</h2>
+          <script>
+               function sumMultiples(a, b, n) {
+                    let sum = 0;
+                    for (let i = 1; i < n; i++) {
+                         if (i % a === 0 || i % b === 0)
+                         {
+
+                              sum = sum + i;
+
+                         }
+                    }
+                    return sum;
+               }
+
+               let a = Number(prompt("Enter a:"));
+               let b = Number(prompt("Enter b:"));
+               let n = Number(prompt("Enter n:"));
+
+               let result = sumMultiples(a, b, n);
+               
+               document.write(result);
+
+         </script>
          
          <!-- input/parse demo
             let f=()=>{
